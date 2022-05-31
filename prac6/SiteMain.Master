@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMain.master.cs" Inherits="prac6.SiteMain" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Cодержимое мастер страницы
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderFirst" runat="server">
+                 <p> (плейсхолдер1)-default</p> 
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderSecond" runat="server">
+                <p>
+
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
